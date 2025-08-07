@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+       form{
+              border: 4px solid black;
+              background-color: beige;
+              padding: 30px;
+              margin: 60px 0px 0px 320px;
+              max-width: 800px;
+              background-image: url(OIP.webp);
+             
+              
+       }
+       body{
+               background-color: cadetblue; 
+               background-image: url(FRM.webp);
+       }
+       h1{
+              text-align: center;
+
+       }
+
+
+
+     </style>
+</head>
+<body>
+    <form action="https://en.wikipedia.org/wiki/Wikipedia" method="post"  target="_self">
+          
+          <h1>STUDENT DETAILS</h1>
+          <br>
+
+          <label for="details"><b>STUDENT NAME</b>:</label>
+          <input type="" id="details" name="name" required>
+          <br><br>
+
+          <label for="dob"><b>DOB</b>:</label>
+          <input type="date">
+          <br><br>
+
+          <label for="gen"><b>GENDER</b>:</label>
+          <label for="fe"><b>F</b></label>
+          <input type="radio" name="ab">
+          <label for="fe"><B>M</B></label>
+          <input type="radio" name="ab">
+
+          <br><br>
+
+          <label for="stdreg"> <b>REGISTRATION NO</b>:</label>
+          <input type="" id="stdreg" name="stdreg">
+          <br><br>
+
+          <label for="phno"><B>PHONE NO</B>:</label>
+          <input type="text" id="phno" name="phno" pattern="[0-9]" maxlength="\d(10px)">
+          <br><br>
+
+          <label for="mail"><B>E-MAIL</B>:</label>
+          <input type="email">
+          <br><br>
+
+          <label for="stdept"><B>STUDENT DEPARTMENT</B>:</label>
+          <select id="stdept" name="stdept">
+                 <option value=""selected disabled hidden>select here</option>
+                 <option value="cse">cse</option>
+                 <option value="civil">civil</option>
+                 <option value="eee">eee</option>
+                 <option value="ec">ec</option>
+                 <option value="mechanical">mechanical</option>
+          </select>
+          <br><br>
+
+          <label for="stdsem"><B>STUDENT SEMESTER</B>:</label>
+          <select id="stdsem" name="stdsem">
+                  <option value=""selected disabled hidden>select here</option>
+                  <option value="s1">s1</option>
+                  <option value="s2">s2</option>
+                  <option value="s3">s3</option>
+                  <option value="s4">s4</option>
+                  <option value="s5">s5</option>
+                  <option value="s6">s6</option>
+                  <option value="s7">s7</option>
+                  <option value="s8">s8</option>
+          </select>
+          <br><br>
+
+          <label for="bck"><B>NUMBER OF BACKPAPERS</B>:</label>
+          <input type="number">
+          <br><br>
+
+          <label for="uni"><B>NAME OF UNIVERSITY</B>:</label>
+          <input list="univers" id="uni" name="uni">
+          <datalist id="univers">
+             <option value="IIT MADRAS">IIT MADRAS</option>
+             <option value="IIT DELHI">IIT DELHI</option>
+             <option value="IIT BOMBAY">IIT BOMBAY</option>
+             <option value="IIT KANPUR">IIT KANPUR</option>
+             <option value="IIT KHARAGPUR">IIT KHARAGPUR</option>
+          </datalist>
+          <br><br>
+
+          <label for="cv"><B>UPLOAD YOUR CV</B></label>
+          <input type="file">
+          <br><br>
+
+          
+          <button>submit</button>
+
+
+
+    </form> 
+</body>
+</html>

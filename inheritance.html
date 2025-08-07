@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal
+        {
+            constructor(name)
+            {
+                this.name=name;
+            }
+            makesound()
+            {
+                console.log("some sound");
+            }
+        }
+        class Dog extends Animal  //use extends to inherit 
+        {
+            constructor(name,breed)
+            {
+                super(name);
+                this.breed=breed;
+            }
+            makesound()
+            {
+                console.log("woof");
+            }
+        }
+        const myDog=new Dog("titto","lab");
+        console.log(myDog.name);
+        myDog.makesound();    //child override   makesound()
+    </script>
+</body>
+</html>

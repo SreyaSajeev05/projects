@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student
+        {
+            constructor(stdid,stdname,stdage)
+            {
+                this.stdid=stdid;
+                this.stdname=stdname;
+                this.stdage=stdage;
+            }
+            view()
+            {
+                console.log(this.stdname,this.stdage);
+            }
+        }
+        let obj=new student("vke21","sreya",22);
+        let obj1=new student("vke25","san",22);
+        obj.view();
+        obj1.view();
+    </script>
+</body>
+</html>

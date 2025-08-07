@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(make,model,year)
+            {  
+              this.make=make;
+              this.model=model;
+              this.year=year;
+            }
+           display()
+           {
+            console.log(this.make,this.model,this.year);
+           }
+        }
+
+       let obj=new Car("honda","city",2020);
+       let obj1=new Car("innova","crysta",2021);
+       obj.display();
+       obj1.display();
+    </script>
+
+
+
+
+ <script>
+        class Cars{
+            constructor(make,model,year)
+            {  
+              this.make=make;
+              this.model=model;
+              this._year=year;     //underscore will hide the year-encapsulation:bundles data and methods and restrict direct access to some components
+            }
+           display()
+           {
+            console.log(this.make,this.model,this.year);
+           }
+        }
+
+       let obje=new Cars("honda","city",2020);
+       let obje1=new Cars("innova","crysta",2021);
+       obje.display();
+       obje1.display();
+    </script>
+
+
+
+    
+</body>
+</html>

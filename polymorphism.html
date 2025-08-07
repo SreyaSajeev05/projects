@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal
+        {
+            constructor(name)
+            {
+                this.name=name;
+            }
+            makesound()
+            {
+                console.log("some sound");
+            }
+        }
+        class Dog extends Animal  //use extends to inherit 
+        {
+            constructor(name,breed)
+            {
+                super(name);
+                this.breed=breed;
+            }
+            makesound()
+            {
+                console.log("woof");
+            }
+        }
+        class Cat extends Animal
+        {
+            constructor(name,color)
+            {
+                super(name);
+                this.color=color;
+            }
+            makesound()
+            {
+                console.log("meoww");
+            }
+        }
+
+        function animalsound(animal)
+        {
+            animal.makesound();
+        }
+        const myDog=new Dog("titto","lab");
+        const myCat=new Cat("leo","white");
+        animalsound(myDog);
+        animalsound(myCat);
+         
+    </script> 
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="details">NAME</label>
+        <input type="" id="details" name="name">
+        <br><br>
+
+        <label for="course">COURSE</label>
+        <input type="" id="course" name="course">
+        <br><br>
+
+        <label for="address">ADDRESS</label>
+        <textarea id="address" name="address" placeholder="enter your address" rows="3px" cols="20px"></textarea>
+        <br><br>
+
+        <label for="flowers">choose a flower</label>
+        <select id="flowers" name="flowers">
+            <option value=""selected disabled hidden>select here</option>
+             <option value="lilly">lilly</option>
+             <option value="rose">rose</option>
+             <option value="jasmine">jasmine</option>
+             <option value="lotus">lotus</option>
+        </select>
+        <br><br>
+
+        <label for="flowers2">based on likes and dislikes</label>
+        <select id="flowers2" name="flowers2">
+            <option value=""selected disabled hidden>select here</option>
+              <optgroup label="likes">
+                  <option value="lilly">lilly</option>
+                 <option value="rose">rose</option>
+              </optgroup>
+              <optgroup label="dislikes">
+                     <option value="rose">jasmine</option>
+                     <option value="lotus">lotus</option>
+              </optgroup>
+            </select>
+            <br><br>
+
+            <label for="btchstrms">BTECH STREAMS</label>
+            <input list="btechstreams" id="btchstrms" name="btchstrms">
+            <datalist id="btechstreams">
+                <option value="civil">civil</option>
+                <option value="cse">cse</option>
+                <option value="eee">eee</option>
+              <option value="mechanical">mechanical</option>
+               <option value="ec">ec</option>
+            </datalist>
+           <br><br>
+            <button>submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee
+        {
+            constructor(name,id)
+            {
+                this.name=name;
+                this.id=id;
+            }
+            cal_salary()
+            {
+                throw new Error;
+            }
+        }
+        class Manager extends Employee
+        {
+            constructor(name,id,allowences)
+            {
+                super(name,id)
+                this.allowensces=allowences
+            }
+            cal_salary()
+            {
+                return 5000+this.allowensces
+            }
+        }
+        const manager=new Manager("emp1",1,2000);
+        const emp=new Employee("emp1",1,2000);
+        console.log(manager.name);
+        console.log(manager.id);
+        console.log(manager.allowensces);
+        console.log(manager.cal_salary());
+        console.log(emp.cal_salary()); //throws error
+    </script>
+</body>
+</html>

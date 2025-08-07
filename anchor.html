@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="one" href="https://en.wikipedia.org/wiki/Main_page">wikipedia</a>
+     <script>
+        var c=document.getElementById("one");
+        c.addEventListener("click",function(event)
+        {
+            event.preventDefault();     //does not load the link
+        })
+     </script>
+
+
+
+     
+</body>
+</html>
